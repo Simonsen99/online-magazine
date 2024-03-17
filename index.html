@@ -4,89 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knitiornary</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
-    
-
-<!-- Billeder til head i online magazinet -->
-    <img class="sogefunktion" src="img/soge.webp" alt="sogefunktion">
-    <img class="vealg-sprog" src="img/dansk-flag.webp" alt="vaelg-sprog">
-    <img class="logo" src="img/Online-Magazine-logo.svg" alt="Online-Magazine-logo">
-
 
 </head>
 <body>
-<!-- Hovedmenu med 5 menupunkter og submenuer -->
-<nav>
-    <ul>
-    <li class="menupunkt1" ><a href=""> Inden du starter </a></li>
-        <!-- Submenu -->
+    <!-- Billede af logo -->
+    <header class="logo">
+        <a href="index.html" aria-label="Hjem">
+            <img src="img/Online-Magazine-logo.png" alt="logo" style="max-width: 180px;">
+        </a>
+    </header>
+
+    <!-- Jeg koder min navigationsbar -->
+    <nav>
         <ul>
-            <li><a href="saadan-laeser-du-en-strikkeopskrift.html"> Sådan læser du en strikkeopskrift </a></li>
-            <li><a href=""> Strikkefasthed </a></li>
+            <li class="navpunkt"><a href="#">Inden du starter</a>
+                <ul class="dropdown">
+                    <li><a href="saadan-laeser-du-en-strikkeopskrift.html">Sådan læser du en strikkeopskrift</a></li>
+                    <li><a href="#">Strikkefasthed</a></li>
+                </ul>
+            </li>
+
+            <li class="navpunkt"><a href="#">Det skal du bruge</a>
+                <ul class="dropdown">
+                    <li><a href="#">Strikkepinde</a></li>
+                    <li><a href="#">Garn</a></li>
+                    <li><a href="#">Maskemarkører</a></li>
+                    <li><a href="#">Målebånd og saks</a></li>
+                </ul>
+            </li>
+
+            <li class="navpunkt"><a href="#">Lær at strikke</a>
+                <ul class="dropdown">
+                    <li><a href="saadan-slaar-du-masker-op.html">Sådan slår du masker op</a></li>
+                    <li><a href="#">Sådan laver du retmasker</a></li>
+                    <li><a href="#">Sådan laver du vrangmasker</a></li>
+                    <li><a href="#">Sådan laver du ind- og udtagniner</a></li>
+                    <li><a href="#">Sådan laver du ribkant</a></li>
+                    <li><a href="#">Sådan skifter du garn</a></li>
+                    <li><a href="#">Sådan lukker du af</a></li>
+                    <li><a href="#">Hvad hvis jeg laver fejl?</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="begyndervenlige-strikkeopskrifter.html">Begyndervenlige strikkeopskrifter</a></li>
+
+            <li class="navpunkt"><a href="#">Om</a>
+                <ul class="dropdown">
+                    <li><a href="#">Historien om Knitiornary</a></li>
+                    <li><a href="#">Strik vs. hækling</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Knitiornarys favoritter</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </li>
         </ul>
+    </nav>
 
-    <li class="menupunkt2" ><a href=""> Dét skal du bruge </a></li>
-        <!-- Submenu -->
-        <ul>
-            <li><a href=""> Strikkepinde </a></li>
-            <li><a href=""> Garn </a></li>
-            <li><a href=""> Maskemarkører </a></li>
-            <li><a href=""> Målebånd og saks </a></li>
-        </ul>
-
-    <li class="menupunkt3" ><a href=""> Lær at strikke </a></li>
-        <!-- Submenu -->
-        <ul>
-            <li><a href="saadan-slaar-du-masker-op.html"> Sådan slår du masker op </a></li>
-            <li><a href=""> Sådan laver du retmasker </a></li>
-            <li><a href=""> Sådan laver du vrangmasker </a></li>
-            <li><a href=""> Sådan laver du ind- og udtagninger</a></li>
-            <li><a href=""> Sådan laver du ribkant </a></li>
-            <li><a href=""> Sådan skrifter du garn </a></li>
-            <li><a href=""> Sådan lukker du af </a></li>
-            <li><a href=""> Hvad hvis jeg laver fejl? </a></li>
-        </ul>
-
-    <li class="menupunkt 4" ><a href="begyndervenlige-strikkeopskrifter.html"> Begyndervenlige strikkeopskrifter </a></li>
-
-    <li class="menupunkt5" ><a href=""> Om </a></li>
-        <!-- Submenu -->
-        <ul>
-            <li><a href=""> Historien om Knitiornaty </a></li>
-            <li><a href=""> Strik vs. hækling </a></li>
-            <li><a href=""> FAQ </a></li>
-            <li><a href=""> Knitiornarys farvoritter </a></li>
-            <li><a href=""> Kontakt </a></li>
-        </ul>
-</ul>
-</nav>
-</body>
-
-<footer>
-    <!-- Footer med tre sektioner: nyhedsbrev, kontakt og sociale medier --> 
-
+    <!-- Footer -->
+    <footer>
         <section class="nyhedsbrev">
             <h3>Tilmeld nyhedsbrev </h3>
             <form>
-                <input name="" id="" placeholder="Navn">
-                <input name="" id="" placeholder="E-mail">
+                <input name="name" id="name" placeholder="Navn">
+                <input name="e-mail" id="e-mail" placeholder="E-mail">
             </form>
-            <button type="button"> Tilmed </button> 
+            <button type="button">Tilmeld</button> 
         </section>
-
+        
         <section class="kontakt"> 
-            <i class="fa-solid fa-phone"></i> <p>12345678</p>
-            <i class="fa-solid fa-envelope"></i> <p>info@knitiornary.dk</p>
+            <h3>Kontakt</h3>
+            <span class="fas fa-phone"></span> <p>12345678</p>
+            <span class="fas fa-envelope"></span> <p>info@knitiornary.dk</p>
         </section>
-
-        <section class="sociale medier">
-            <h3> Se mere på: </h3>
-            <a href="https://www.facebook.com/"> <img src="img/Facebook-f_Logo-Blue-Logo.wine.svg" alt="facebook-logo"></a>
-            <a href="https://www.instagram.com/"><img src="img/Instagram-Logo.wine.svg" alt="instagram-logo"></a>
-            <a href="https://www.tiktok.com/"><img src="img/TikTok-Logo.wine.svg" alt="tikTok-logo"></a>
-            <a href="https://dk.pinterest.com/"><img src="img/Pinterest-Icon-Logo.wine.svg" alt="pinterest-logo"></a>
+        
+        <section class="sociale-medier">
+            <h3>Se mere på:</h3>
+          
         </section>
-</footer>
-
+    </footer>
+</body>
 </html>

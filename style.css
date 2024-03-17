@@ -1,0 +1,73 @@
+/* Jeg styler mit logo */
+.logo {
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Jeg styler min navigationabar */ 
+nav {
+    text-align: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 12px 80px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: blue;
+
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 65px;
+    
+
+}
+
+nav ul li a{
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: gray;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    background-color: green;
+    z-index: 1;
+}
+
+nav ul .dropdown li a{
+    padding: 0 20px;
+    
+}
+
+nav ul .menu:hover .dropdown{
+    display: block;
+}
+
+/* Jeg definerer min skrifttype */
+body {
+    font-family: "raleway", sans-serif;
+}
