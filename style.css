@@ -1,22 +1,27 @@
+/* Jeg definerer min skrifttype og baggrundsfarve */
+body {
+    font-family: "raleway", sans-serif;
+    background-color: #E3E0D8;
+}
 
-
-/* Jeg styler mit logo */
-.logo {
+ /* Jeg styler mit logo */
+ .logo {
     height: 175px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
+    }
 
 /* Jeg styler min navigationabar */ 
 nav {
     text-align: center;
+    border-bottom: 2px solid black;
 }
 
 nav a {
     height: 100%;
-    padding: 12px 80px;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
     display: flex;
@@ -41,9 +46,9 @@ nav ul li{
 
 nav ul li a{
     display: block;
-    padding: 18px;
+    padding: 0; /* kig nærmere */
     text-decoration: none;
-    color: green;
+    color: black;
     cursor: pointer;
 }
 
@@ -53,10 +58,11 @@ nav ul .dropdown {
     top: 100%;
     left: 0;
     z-index: 1;
+    background: white;
 }
 
 nav ul .dropdown li a{
-    padding: 0 20px;
+    padding: 0 10px; /* kig nærmere */
     
 }
 
@@ -67,19 +73,19 @@ nav ul .navpunkt:hover .dropdown{
 /* Jeg styler min hover-effekt */
 nav a{
     position: relative;
-    width: 200px;
+    width: 200px; /* Navigationen er aligned - vandret hele vejen */
     height: 50px;
-    line-height: 50px;
+    line-height: 50px; /* kig også her - denne er afgørende for om undermenu-links bliver vist korrekt */
     text-align: center;
 }
 
 nav a:hover, nav a:active {
-    letter-spacing: 5px;
+    letter-spacing: 0px; /* kig også her - problemet med at link teksten blev bred er løst */
+    /* letter-spacing: 5px; */
 }
 
 nav a::before,
 nav::after {
-    content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -102,9 +108,34 @@ nav a:hover::after {
 }
 
 
-
-/* Jeg definerer min skrifttype og baggrundsfarve */
-body {
-    font-family: "raleway", sans-serif;
-    background-color: #E3E0D8;
+/* Jeg styler min footer */
+/* Tilmeld nyhedsbrev*/
+footer {
+    border-top: 2px solid black;
 }
+
+.nyhedsbrev {
+    text-align: left;
+    margin-left: 162px;   
+}
+
+.column{ 
+    flex-direction: column;
+    display: flex;
+    margin-right: 900px;
+    margin-bottom: 10px;
+}
+.e-mail {
+    margin-top: 10px;
+}
+
+.button{
+   margin-left: auto;
+}
+
+/* Kontakt */
+.kontakt {
+    text-align: center;
+    margin-top: -145px;
+}
+
