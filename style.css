@@ -4,6 +4,14 @@ body {
     background-color: #E3E0D8;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* Gennemgående style for h1 classes */
 .h1 {
     margin-left: 156px;
@@ -23,9 +31,11 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+    flex: 1;
+    margin-right: 225px;
     }
 
+/* Jeg styler min søgebar og giver den en hover-effekt*/    
 .box {
     height: 30px;
     display: flex;
@@ -35,7 +45,8 @@ body {
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    
+    margin-left: 157px;
+
 }
 
 .box:hover input {
@@ -55,6 +66,7 @@ body {
     color: gray;
     font-size: 18px;
 }
+
 
 /* Jeg styler mit billede på forsiden */
 .forside {
