@@ -18,12 +18,43 @@ body {
 
  /* Jeg styler mit logo */
  .logo {
-    height: 175px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
     }
+
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    
+}
+
+.box:hover input {
+    width: 400px;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.box a .fa-solid fa-magnifying-glass {
+    color: gray;
+    font-size: 18px;
+}
 
 /* Jeg styler mit billede på forsiden */
 .forside {
@@ -62,6 +93,15 @@ body {
     background-color: #E3E0D8;
     padding: 5px;
 }
+
+
+/* Jeg styler mine underbilleder på forsiden */
+.opskrift {
+    margin-top: -215px;
+    margin-left: 150px;
+}
+
+
 
 /* Jeg styler mine links under billedet på forsiden */
 .link1 {
@@ -197,14 +237,18 @@ footer {
 /* Kontakt */
 .kontakt {
     text-align: center;
-    margin-top: -145px;
+    margin-top: -142px;
     display: flex;
     flex-direction: column;
 }
 
 .fas fa-phone {
-    text-align: left;
+    display: list-item;
     
+}
+
+.nummer {
+    display: inline-block;
 }
 
 
@@ -217,7 +261,7 @@ footer {
 
 .sociale-medier {
     text-align: right;
-    margin-top: -183px;
+    margin-top: -190px;
     margin-right: 200px;
 }
 
