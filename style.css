@@ -21,6 +21,7 @@ header {
 .tekst {
     margin-left: 156px;
     margin-right: 200px;
+    line-height: 1.5;
 }
 
 
@@ -82,9 +83,9 @@ header {
     width: 20%;
     left: 12%;
     height: 200px;
-    color: #865e2e;
-    background-color: #865e2e;
-    opacity: 0.75;
+    color: #989a89;
+    background-color: #989a89;
+    
 }
 /* Jeg giver skriften i boksen farve og størrelse */
 .bokstekst {
@@ -95,7 +96,7 @@ header {
 
 /*Jeg styler min call to action knap*/
 .knap {
-    border-style: solid;
+    border-style: none;
     border-radius: 15px;
     width: 10%;
     position: relative;
@@ -103,7 +104,8 @@ header {
     text-align: center;
     left: 17%;
     background-color: #E3E0D8;
-    padding: 5px;
+    padding: 10px;
+
 }
 
 
