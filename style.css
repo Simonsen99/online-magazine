@@ -109,23 +109,30 @@ header {
 }
 
 
-/* Jeg styler mine underbilleder på forsiden */
+.billedrække {
+    display: flex;
+    margin-top: -220px;
+
+} 
+
+.billedeForside {
+    margin-left: 160px;
+}
 .opskrift {
-    margin-top: -215px;
-    margin-left: 150px;
+    display: flex;
 }
 
-
-
-/* Jeg styler mine links under billedet på forsiden */
-.link1 {
-    margin-left: 12%;
+.masker {
+    display: flex;
 }
 
-.link2 {
-    margin-left: 70%;
-    
+.udforsk {
+    display: flex;
+    margin-right: 200px;
+}
 
+.størrelse {
+    font-size: smaller;
 }
 
 /* Jeg styler min navigationabar */ 
